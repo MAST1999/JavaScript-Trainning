@@ -1,10 +1,6 @@
-var globalName = "James";
-function printName()
-{
-    var localName = "Honey";    /*If you don't use "var" it won't be local and 
-                                will end up being global*/
-    document.write(localName);
-}
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
-printName();
-document.write(globalName);
+for(var i = 0; i<10; i++)
+{
+    document.write(numbers[i]);
+}
