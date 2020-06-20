@@ -1,13 +1,15 @@
-var i = 0;
-
-while(i<5)
+function batting(player, distance)
 {
-    document.write("1");
+    if(distance <= 350 && distance > 0)
+    {
+        document.write("Steve hits the ball");
+    }else if(distance > 0){
 
-    i++;
+        document.write("Steve struck out");
+
+    }else{
+        document.write("Steve hits home run");
+    }
 }
 
-for(var i = 0; i<5; i++)
-{
-    document.write("Hello world  ");
-}
+batting("steve", 9)
