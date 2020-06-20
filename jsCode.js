@@ -1,15 +1,8 @@
-function batting(player, distance)
+function add(x,y)
 {
-    if(distance <= 350 && distance > 0)
-    {
-        document.write("Steve hits the ball");
-    }else if(distance > 0){
-
-        document.write("Steve struck out");
-
-    }else{
-        document.write("Steve hits home run");
-    }
+    result = x * y;
+    return  result;
 }
 
-batting("steve", 9)
+var a = add(3,9);
+document.write(a);
