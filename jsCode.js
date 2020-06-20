@@ -1,10 +1,13 @@
-var food = "apple";
+var i = 0;
 
-if(food == "apple")
+while(i<5)
 {
-    alert("We ate some food ... apple");
-} else if (food == "meat") {
-    alert("We didn't eat meat");
-} else {
-    alert("We didn't eat those.");
+    document.write("1");
+
+    i++;
+}
+
+for(var i = 0; i<5; i++)
+{
+    document.write("Hello world  ");
 }
