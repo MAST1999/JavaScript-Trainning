@@ -1,5 +1,6 @@
 var orc = {
     color: "green",
+    hair:"red",
     weight: 180,
     height: 5,
     stomachFull: true,
@@ -23,8 +24,9 @@ var orc = {
     }
 };
 
-var newAge = orc.age + 2;
-
-orc.yell();
-orc.eat();
-document.write(newAge);
+orc.hair = "purple";
+orc.hair = 1;
+orc.hair2 = "red ";
+document.write(orc.hair2);
+delete orc.hair2;
+document.write(orc.hair2);
