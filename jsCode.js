@@ -1,8 +1,10 @@
-function add(x,y)
+var globalName = "James";
+function printName()
 {
-    result = x * y;
-    return  result;
+    var localName = "Honey";    /*If you don't use "var" it won't be local and 
+                                will end up being global*/
+    document.write(localName);
 }
 
-var a = add(3,9);
-document.write(a);
+printName();
+document.write(globalName);
