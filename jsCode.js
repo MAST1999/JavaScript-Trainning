@@ -1,11 +1,5 @@
 function changeStyle()
 {
-    var paragraph = document.getElementsByClassName("para1");
+    document.getElementById("image").src = "images/tv-lg-lm6300-digibaneh4.jpg";
+}    
     
-    var firstParagraph = paragraph[0].innerHTML;
-    var secondParagraph = paragraph[1].innerHTML;
-    var addThem = paragraph[2].innerHTML = firstParagraph + secondParagraph;
-
-    var firstParagraph = paragraph[0].innerHTML = "";
-    var secondParagraph = paragraph[1].innerHTML = "";
-}
