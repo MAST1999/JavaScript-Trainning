@@ -1,8 +1,7 @@
 function changeStyle()
 {
-    var paragraph = document.getElementsByTagName("p");
-    for (var i =0; i<paragraph.length; i++)
-    {
-        var changeParaText = paragraph[i].style.fontFamily = "CaskaydiaCove Nerd Font";
-    }
+    var paragraph = document.getElementsByClassName("para1");
+    
+    var changeText = paragraph[0].style.color = "red"
+    var changeText = paragraph[1].style.color = "red"
 }
