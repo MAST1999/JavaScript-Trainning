@@ -1,9 +1,7 @@
-var hello = "Hello how are you doing? ";
+var number = 4.7;
 
-hello = hello.toUpperCase();
-var a = hello.length;
-hello = hello.replace("DOING","today");
-hello = hello.bold();
-var largeSentence = hello + a
+var newNumber = 26 + Math.round(number); //use ceil for rounding up and floor to round down.
 
-document.write(largeSentence);
+var number2 = Math.sqrt(16)
+
+document.write(number2);
