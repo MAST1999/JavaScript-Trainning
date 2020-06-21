@@ -1,7 +1,7 @@
-var number = 4.7;
+var todayDate = new Date();
 
-var newNumber = 26 + Math.round(number); //use ceil for rounding up and floor to round down.
+todayDate.toString();
+todayDate.getFullYear();
+todayDate.setFullYear(2021);
 
-var number2 = Math.sqrt(16)
-
-document.write(number2);
+document.write(todayDate);
