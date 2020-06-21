@@ -1,7 +1,5 @@
 function changeStyle()
 {
-    var text = document.getElementById("para1").style.color = "blue";
-    var text = document.getElementById("para1").style.backgroundColor = "red";
-    var text = document.getElementById("para1").style.fontFamily = "CaskaydiaCove Nerd Font"
-    
+    var paragraph = document.getElementsByTagName("p");
+    var changeParaText = paragraph[1].style.fontFamily = "CaskaydiaCove Nerd Font";
 }
