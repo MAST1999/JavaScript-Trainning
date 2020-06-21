@@ -1,5 +1,8 @@
 function changeStyle()
 {
     var paragraph = document.getElementsByTagName("p");
-    var changeParaText = paragraph[1].style.fontFamily = "CaskaydiaCove Nerd Font";
+    for (var i =0; i<paragraph.length; i++)
+    {
+        var changeParaText = paragraph[i].style.fontFamily = "CaskaydiaCove Nerd Font";
+    }
 }
