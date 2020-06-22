@@ -1,5 +1,5 @@
-function changeStyle()
+function changeColor()
 {
-    document.getElementById("image").src = "images/tv-lg-lm6300-digibaneh4.jpg";
+    document.getElementById("para1").style.color="blue";
 }    
     
