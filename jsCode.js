@@ -8,4 +8,5 @@ function changeStyle()
 
     var firstParagraph = paragraph[0].innerHTML = "";
     var secondParagraph = paragraph[1].innerHTML = "";
+    document.getElementById("button").style.visibility = "hidden";
 }
