@@ -1,7 +1,12 @@
-function changeText()
+function validateTextbox()
 {
-    var para2 = document.getElementById("p2");
-    // var sibling = para2.nextElementSibling;
-    var sibling = para2.previousElementSibling;
-    sibling.style.color = "blue";
+    var box = document.getElementById("name");
+    var box2 = document.getElementById("address");
+    if (box.value == "" || box2.value == "")
+    {
+        box.style.backgroundColor = "red";
+        box2.style.backgroundColor = "red";
+        alert("The fields marked in red cannot be blank.");
+        return false;
+    }
 }
