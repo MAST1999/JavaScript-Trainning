@@ -1,26 +1,13 @@
-function validateTextbox()
-{
-    var box = document.getElementById("name");
-    var box2 = document.getElementById("address");
-    
-    if (box.value.length < 5 || box2.value.length < 5)
-    {
-        alert("The fields marked in red cannot be blank or less than 5 characters.");
-    }
-    
-    if (box.value.length < 5)
-    {
-        box.style.border = "solid 3px red";
-        box.focus();
-    }
+function car(type, color, miles) {
+    this.type = type;
+    this.color = color;
+    this.miles = miles;
+}
 
-    if (box2.value.length < 5)
-    {
-        box2.style.border = "solid 3px red";
-    }
+var car1 = new car("Compact", "blue", 6580);
+var car2 = new car("Truck", "red", 397);
+var car3 = new car("SUV", "yellow", 9948);
 
-    if (box.value.length < 5 || box2.value.length < 5)
-    {
-        return false;
-    }
+function changeStyle(){
+    document.getElementById("para").innerHTML = car1.type + " car with " + car1.miles + " miles.  " + car1.color + " is the color.";
 }
