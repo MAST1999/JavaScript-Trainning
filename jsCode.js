@@ -1,6 +1,7 @@
 function changeText()
 {
-    var child = document.getElementById("p1");
-    var parent = child.parentElement;
-    parent.style.color = "blue";
+    var para2 = document.getElementById("p2");
+    // var sibling = para2.nextElementSibling;
+    var sibling = para2.previousElementSibling;
+    sibling.style.color = "blue";
 }
