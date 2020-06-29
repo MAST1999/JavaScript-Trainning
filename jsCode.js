@@ -9,7 +9,7 @@ function printDay() {
     var dayText = document.createTextNode("");
 
     var paragraph = document.getElementById("para");
-
+ 
     switch (Number(day)) {
         case 1:
             var para1 = document.getElementById("para").innerHTML = "Day is: Saturday";
