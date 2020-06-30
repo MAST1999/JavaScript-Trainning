@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="jsCode.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Training</title>
   </head>
   <body id="elBody">
-    <button onclick="fnHello()">Say Hello</button>
+    <label for="tUserInput">Write your name here :</label>
+    <input id="tUserInput" type="text" placeholder="Enter your name" />
+    <br /><br />
+    <button id="btnUserInput" onclick="fnHello()">Submit!</button>
   </body>
 </html>

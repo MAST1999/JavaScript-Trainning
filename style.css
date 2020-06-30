@@ -1,6 +1,6 @@
 body {
-  margin: 0px;
+  margin: 2px;
 }
-h1 {
-  font-family: "Courier New";
+#bUserInput {
+  margin-left: 11em;
 }
