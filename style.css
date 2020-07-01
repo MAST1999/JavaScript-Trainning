@@ -4,3 +4,13 @@ body {
 #btnUserInput {
   margin: 5px;
 }
+#laUsername {
+  color: red;
+  font-style: italic;
+  visibility: hidden;
+}
+#laPassword {
+  color: red;
+  font-style: italic;
+  visibility: hidden;
+}

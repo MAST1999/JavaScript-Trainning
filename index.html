@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="style.css" />
     <title>Training</title>
   </head>
-  <body id="elBody">
-    <select name="firstNames" id="selNames">
-      <option value="Amin">Amin</option>
-      <option value="Reza">Reza</option>
-      <option value="Amir">Amir</option>
-    </select>
-    <br>
-    <button id="btnUserInput" onclick="fnHello()">Submit!</button>
+  <body id="elBody" onsubmit="return validate()">
+    <form id="fLogin" method="GET" action="/message.html">
+      <label for="username">Username: </label>
+      <input placeholder="Username" required type="username" name="username" id="username" />
+      <label id="laUsername" for="username">Invalid</label>
+      <br><br>
+      <label for="password">Password :</label>
+      <input placeholder="Password" required type="password" name="password" id="password" />
+      <label id="laPassword" for="Password">Invalid</label>
+      <br /><br />
+      <button id="btnSubmit" type="submit">Submit!</button>
+    </form>
   </body>
 </html>
