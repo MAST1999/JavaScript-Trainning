@@ -3,7 +3,11 @@
 
 function validate() {
     "use strict";
-    var regExper = /A01/i;
+    var regExper = /[emi]00/i;
+    // var regExper = /[a-r]00/i;
+    // var regExper = /[a-r]0[2-6]0[b-g]/i;
+    // for excluding var regExper = /[^1abc]0[a-r]0/i;;
+    // regExper = new RegExper("E00"."i");
     var sError = "Please enter your ";
     var username = document.getElementById("username");
     var password = document.getElementById("password");
