@@ -1,7 +1,9 @@
 /*jslint browser:true*/
-/* jslint devel: true */
+/*jslint devel: true*/
+
 function validate() {
     "use strict";
+    var regExper = /A01/i;
     var sError = "Please enter your ";
     var username = document.getElementById("username");
     var password = document.getElementById("password");
@@ -23,8 +25,8 @@ function validate() {
         alert(sError);
 
     }
-    if (username.value.trim() === "" || username.value.length < 6) {
-        sError = sError + "Username and make it longer than 6 characters";
+    if (username.value.trim() === "" || username.value.length < 6 || !regExper.test(username.value)) {
+        sError = sError + "Username and make it longer than 6 characters and must contain A01";
         user_border = "solid 3px red";
         document.getElementById("laUsername").style.visibility = "visible";
         alert(sError);
