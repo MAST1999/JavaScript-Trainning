@@ -2,23 +2,36 @@
 /*jslint devel:true*/
 /*global window */
 
-var id = 0;
-var seconds = 0;
+var intervalId = 0;
+var opacity = 0;
 
-function printMessage() {
+function fadeIn() {
     "use strict";
-    var elColor = document.getElementById("elColor");
-    elColor.innerHTML = seconds + " seconds";
-    seconds += 1;
-
+    intervalId = setInterval(show, 40);
 }
-function start() {
+function fadeOut() {
     "use strict";
-    // id = window.setTimeout(printMessage, 5000);
-    id = window.setInterval(printMessage, 1000);
+    intervalId = setInterval(hide, 40);
 }
-function stop() {
+function hide() {
     "use strict";
-    //window.clearTimeout(id);
-    window.clearInterval(id);
+    var img = document.getElementById("imgTv");
+    opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+    if (opacity > 0) {
+        opacity -= 0.1;
+        img.style.opacity = opacity;
+    } else {
+        clearInterval(intervalId);
+    }
+}
+function show() {
+    "use strict";
+    var img = document.getElementById("imgTv");
+    opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+    if (opacity < 1) {
+        opacity += 0.1;
+        img.style.opacity = opacity;
+    } else {
+        clearInterval(intervalId);
+    }
 }
