@@ -8,16 +8,8 @@
     <title>Training</title>
   </head>
   <body id="elBody" onsubmit="return validate()">
-    <form id="fLogin" method="GET" action="/message.html">
-      <label for="phoneNumber">PhoneNumber: </label>
-      <input placeholder="PhoneNumber" required type="phoneNumber" name="phoneNumber" id="phoneNumber" />
-      <label id="laUsername" for="phoneNumber">Invalid</label>
-      <br><br>
-      <label for="password">Password :</label>
-      <input placeholder="Password" required type="password" name="password" id="password" />
-      <label id="laPassword" for="Password">Invalid</label>
-      <br /><br />
-      <button id="btnSubmit" type="submit">Submit!</button>
-    </form>
+    <button id="btnStart" onclick="start()">Start</button>
+    <h2 id="elColor">Yellow</h2>
+    <button id="btnStop" onclick="stop()">Stop</button>
   </body>
 </html>
