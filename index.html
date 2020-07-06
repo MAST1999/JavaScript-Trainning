@@ -8,9 +8,23 @@
   </head>
   <body id="elBody">
     <h2 id="elH2">Setting up JQuery!</h2>
-    <h2 class="someHeadings">Setting up JQuery!</h2>
-    <h2 class="someHeadings">Setting up JQuery!</h2>
-    <br><br>
+    <p>Not in divs</p>
+    <div id="firstDiv" class="divs">
+      <p>Whoops the first</p>
+      <p>Whoops the third</p>
+    </div>
+    <div id="secondDiv" class="divs">
+      <p>Whoops the second</p>
+    </div>
+    <div id="thirdDiv" class="divs">
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+      </ul>
+    </div>
+    <br /><br />
     <button onclick="fn1()" id="btnClick">Click me</button>
   </body>
   <script src="/node_modules/jquery/dist/jquery.js"></script>
