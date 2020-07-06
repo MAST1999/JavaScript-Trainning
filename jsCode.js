@@ -6,5 +6,7 @@
 
 function fn1() {
     "use strict";
-    $("#elH2").fadeToggle(1000);
+    //$("h2").fadeToggle(250); the selection is the same as CSS!
+    $("#elH2").fadeToggle(250);
+    $(".someHeadings").fadeToggle(500);
 }
