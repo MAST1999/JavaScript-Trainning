@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="jsCode.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Training</title>
   </head>
-  <body id="elBody" onsubmit="return validate()">
-    <button id="btnFadeOut" onclick="fadeOut()">Fade out</button>
+  <body id="elBody">
+    <h2 id="elH2">Setting up JQuery!</h2>
     <br><br>
-    <img id="imgTv" src="/images/TV-LG-LM6300-1.jpg" width="250 px" height="250 px" alt="">
-    <br><br>
-    <button id="btnFadeIn" onclick="fadeIn()">Fade in</button>
+    <button onclick="fn1()" id="btnClick">Click me</button>
   </body>
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="jsCode.js"></script>
 </html>
