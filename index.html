@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,26 +7,32 @@
     <title>Training</title>
   </head>
   <body id="elBody">
-    <h2 id="elH2">Setting up JQuery!</h2>
-    <p>Not in divs</p>
-    <div id="firstDiv" class="divs">
-      <p>Whoops the first</p>
-      <p>Whoops the third</p>
-    </div>
-    <div id="secondDiv" class="divs">
-      <p>Whoops the second</p>
-    </div>
-    <div id="thirdDiv" class="divs">
+      <button id="btnClick">Click me</button>
+      <h2 id="elH2">Setting up JQuery!</h2>
+      <p>Not in divs</p>
+      <div id="firstDiv" class="divs">
+          <p>Whoops the first</p>
+          <p>Whoops the third</p>
+      </div>
+      <div id="secondDiv" class="divs">
+          <p>Whoops the second</p>
+      </div>
+      <div id="thirdDiv" class="divs">
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+              <li>item 4</li>
+          </ul>
+      </div>
       <ul>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-        <li>item 4</li>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
       </ul>
-    </div>
-    <br /><br />
-    <button onclick="fn1()" id="btnClick">Click me</button>
+      <br /><br />
+      <script src="/node_modules/jquery/dist/jquery.js"></script>
+      <script src="jsCode.js"></script>
   </body>
-  <script src="/node_modules/jquery/dist/jquery.js"></script>
-  <script src="jsCode.js"></script>
 </html>

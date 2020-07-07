@@ -3,6 +3,10 @@
 }
 .divs {
     border: solid blue 2px;
-    margin: 2px;
-    padding-left: 0.5em;
+    margin: 5px;
+    padding-left: 10px;
+}
+#btnClick {
+    width: 90px;
+    height: 90px;
 }
