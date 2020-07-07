@@ -7,19 +7,18 @@
 $(document).ready(function () {
     "use strict";
     function fn1() {
-        //$("h2").fadeToggle(250); the selection is the same as CSS!
-        //$("#secondDiv,li").fadeToggle(250);
-        //$("div > ul").fadeToggle(250); //$("div p").fadeToggle(250); works the same! same as CSS!
-        //$(".divs").fadeToggle(250);
-        $("p:first").fadeOut(250); // same can be done with classes.
-        $("li:even").fadeOut(250); // even li's fade!
+        //$("#firstDiv").hide();
+        $("#firstDiv").slideUp();
     }
     function fn2() {
-        $("p:first").fadeIn(250);
-        $("li:even").fadeIn(250);
+        //$("#firstDiv").show();
+        $("#firstDiv").slideDown();
     }
-    $("#btnClick").dblclick(fn1);
-    // $("#btnClick").mouseenter(fn1);
-    // $("#btnClick").mouseleave(fn2);
-    $("#btnClick").hover(fn1, fn2);
+    function fn3() {
+        //$("#firstDiv").toggle();
+        $("#firstDiv").slideToggle();
+    }
+    $("#btnClick1").click(fn1);
+    $("#btnClick2").click(fn2);
+    $("#btnClick3").click(fn3);
 });
