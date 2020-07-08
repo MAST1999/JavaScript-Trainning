@@ -8,24 +8,12 @@ $(document).ready(function () {
     "use strict";
     function fn1() {
         //$("#firstDiv").hide();
-        $("#firstDiv").slideUp();
+        $("#div1").fadeToggle(1000,alert1);
+        $("#div2").slideUp(10000).slideDown(4000).fadeOut(1200, alert1);
     }
-    function fn2() {
-        //$("#firstDiv").show();
-        $("#firstDiv").slideDown();
+    function alert1() {
+        alert("complete");
     }
-    function fn3() {
-        $("#cube").animate({
-            left: "150px",
-            opacity: "1",
-            height: "100px",
-            width: "100px",
-            padding: "40px",
-            backgroundColor: "red"
-        }, 1500);
 
-    }
     $("#btnClick1").click(fn1);
-    $("#btnClick2").click(fn2);
-    $("#btnClick3").click(fn3);
 });
