@@ -15,8 +15,15 @@ $(document).ready(function () {
         $("#firstDiv").slideDown();
     }
     function fn3() {
-        //$("#firstDiv").toggle();
-        $("#firstDiv").slideToggle();
+        $("#cube").animate({
+            left: "150px",
+            opacity: "1",
+            height: "100px",
+            width: "100px",
+            padding: "40px",
+            backgroundColor: "red"
+        }, 1500);
+
     }
     $("#btnClick1").click(fn1);
     $("#btnClick2").click(fn2);
