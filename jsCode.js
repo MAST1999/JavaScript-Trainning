@@ -4,16 +4,13 @@
     window, $
 */
 
-$(document).ready(function () {
-    "use strict";
-    function fn1() {
-        //$("#firstDiv").hide();
-        $("#div1").fadeToggle(1000,alert1);
-        $("#div2").slideUp(10000).slideDown(4000).fadeOut(1200, alert1);
+$(document).ready(function (){
+    function fn1(){
+        //$("#p1").text("hello world");
+        //alert($("#p1").html());
+        //$("#p1").html("this is <strong>my bad<strong/>");
+        //alert($("#div1").attr("id"));
+        alert($("#div1").css("font-size"));
     }
-    function alert1() {
-        alert("complete");
-    }
-
     $("#btnClick1").click(fn1);
 });
