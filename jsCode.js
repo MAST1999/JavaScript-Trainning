@@ -6,23 +6,14 @@
 
 
 $(function () {
-    function addClass() {
-        $("#div1").addClass("divStyled");
-    }
-    function removeClass() {
-        $("#div1").removeClass("divStyled");
-    }
-    function toggleClass() {
-        $("#div1").toggleClass("divStyled pStyled");
-    }
-    function CSS1() {
-        var padding = $("#div1").css("padding-left");
-        $("#p2").html(padding);
-
-    }
-
-    $("#btnClick1").on("click", addClass);
-    $("#btnClick2").on("click", removeClass);
-    $("#btnClick3").on("click", toggleClass);
-    $("#btnClick4").on("click", CSS1);
+    $("#dateInput").datepicker({
+        numberOfMonths:1,
+        changeYear:true,
+        changeMonth:true,
+        showWeek:true,
+        weekHeader: "WN",
+        showOtherMonths:true,
+        minDate: new Date(2000,0,1),
+        maxDate: new Date(2077,0,4)
+    });
 });
