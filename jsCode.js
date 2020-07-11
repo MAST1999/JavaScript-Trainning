@@ -6,14 +6,14 @@
 
 
 $(function () {
-    $("#dateInput").datepicker({
-        numberOfMonths:1,
-        changeYear:true,
-        changeMonth:true,
-        showWeek:true,
-        weekHeader: "WN",
-        showOtherMonths:true,
-        minDate: new Date(2000,0,1),
-        maxDate: new Date(2077,0,4)
+    $("#img1").tooltip({
+        track: true,
+        content: "TVs are expensive",
+        show:{
+            effect:"bounce", duration:900 //other effect's consists of "explode", "blind"
+        },
+        hide: {
+            effect: "blind", duration: 900
+        }
     });
 });
