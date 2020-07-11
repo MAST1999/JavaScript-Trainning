@@ -6,14 +6,31 @@
 
 
 $(function () {
-    $("#panel").accordion({
-        collapsible:true,
-        event: "click",
-        animate:500,
-        active:0,
-        heightStyle:true,    /*if one of the panels has a lot more content we 
-                            use this to make sure it resizes it self 
-                            to look nice with the rest of the panels*/
-        icons:{header:"ui-icon-plus", activeHeader:"ui-icon-minus"}
-    });
+    var button = [
+        {
+            text:"Close",
+            icon: "ui-icon-heart",
+            click: function () {
+                $(this).dialog("close");
+            }
+        },
+        {
+            text: "Ok",
+            icon: "ui-icon-heart",
+            click: function () {
+                $(this).dialog("close"); //this is the current selected object.
+            }
+        }
+    ];
+    function showMessage() {
+        $("#panel").dialog({
+            title: "hello",
+            draggable: false,
+            resizable: false,
+            hight: "200px",
+            width: "200px",
+            modal: true
+        });
+    }
+    $("#btnMessage").on("click", showMessage);
 });

@@ -1,19 +1,14 @@
 #elH2 {
     color: rgb(250, 100, 140);
 }
-.divs {
-    border: solid blue 2px;
-    margin: 5px;
-    padding: 10px;
-}
 p {
     color: cornflowerblue;
 }
-.divStyled {
+.divs {
     background-color: firebrick;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 10px;
-    padding: 200px;
+    padding: 20px;
 }
 .pStyled {
     font-size: 32px;
