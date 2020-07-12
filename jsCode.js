@@ -6,32 +6,16 @@
 
 
 $(function () {
-
-    function showMessage() {
-        $("#panel").dialog({
-            title: "hello",
-            draggable: false,
-            resizable: false,
-            hight: "200px",
-            width: "200px",
-            modal: true,
-            buttons: [
-                {
-                    text: "Close",
-                    icon: "ui-icon-heart",
-                    click: function () {
-                        $(this).dialog("close");
-                    }
-                },
-                {
-                    text: "Ok",
-                    icon: "ui-icon-heart",
-                    click: function () {
-                        $(this).dialog("close"); //this is the current selected object.
-                    }
-                }
-            ]
-        });
-    }
-    $("#btnMessage").on("click", showMessage);
+    var foods = [
+        "sandwich",
+        "pizza",
+        "bread"
+    ]
+    $("#foodSelector").autocomplete({
+        source: foods //first bracket if for source
+    }, {
+        autoFocus:true, //the second bracket is for the other things
+        delay:500,
+        minLength:2
+    });
 });
