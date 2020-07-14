@@ -6,10 +6,12 @@
 
 
 $(function () {
-    $("#div1").sortable({
-        opacity: 0.5,
-        distance: 50,
-        delay: 100,
-        containment: "parent"
+    $("#resize").resizable({
+        maxWidth: 500,
+        maxHeight: 500,
+        autoHide: true,
+        //distance: 200,
+        ghost: true,
+        aspectRatio: true
     });
 });
