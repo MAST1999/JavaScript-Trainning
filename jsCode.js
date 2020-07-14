@@ -6,13 +6,10 @@
 
 
 $(function () {
-    $(".cube").draggable({
-        axis: "x", // or y.
-        containment:"parent",
-        cursor: "grabbing",
+    $("#div1").sortable({
         opacity: 0.5,
-        //grid: [300, 300],
-        snap: true,
-        snapTolerance:30
+        distance: 50,
+        delay: 100,
+        containment: "parent"
     });
 });
