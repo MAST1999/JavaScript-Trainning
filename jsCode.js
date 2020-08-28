@@ -1,7 +1,7 @@
 /*jslint browser:true*/
 /*jslint devel:true*/
 /*global
-    window, $
+    window
 */
 
 
